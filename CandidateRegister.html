@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Registration</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body> 
+    <center>
+        <h2>Candidate Registration</h2>
+    <form action="CandidateRegister.php" method="POST" >
+        <label for="cname">Candidate Name:</label><br>
+        <input type="text" id="cname" name="cname" required><br><br>
+
+        <label for="CNIC">CNIC:</label><br>
+        <input type="text" id="CNIC" name="CNIC" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="district">District:</label><br>
+        <input type="text" id="district" name="district" required><br><br>
+
+        <label for="gid">GID:</label><br>
+        <input type="text" id="gid" name="gid" required><br><br>
+
+        <input style="padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(0, 157, 255);
+        color: white;" type="submit" value="Register">
+    </form>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'CandidateRegister.html';
+            return false; // Prevent the form from being submitted without redirect
+        }
+    </script>
+    </center>
+</body>
+</html>

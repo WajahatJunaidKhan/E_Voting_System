@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="a.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content" id="bodySection">
+          <form class="login" action="api/login.php" method="POST">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input
+                type="text"
+                class="login__input"
+                type="number"
+                name="CNIC"
+                placeholder="Enter CNIC NO"
+              />
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                class="login__input"
+                placeholder="Password"
+              />
+            </div>
+            <select name="role" class="form-control">
+              <option value="1" class="form-control">Voter</option>
+              <option value="2" class="form-control">Group</option>
+            </select>
+            <button class="button login__submit" id="loginbutton">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+            <a href="admin.html"
+              ><button type="button" class="button login__submit" id="adminLoginButton">
+                Log in as Admin
+              </button></a
+            >
+            <a href="routes/register.html">REGISTER HERE</a>
+          </form>
+          <div class="social-login">
+            <h3></h3>
+            <div class="social-icons">
+              <a href="#" class="social-login__icon fab fa-instagram"></a>
+              <a href="#" class="social-login__icon fab fa-facebook"></a>
+              <a href="#" class="social-login__icon fab fa-twitter"></a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span
+            class="screen__background__shape screen__background__shape4"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape3"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape2"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape1"
+          ></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

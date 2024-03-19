@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="b.scss" />
+</head>
+<body style="color: white;">
+    <div class="form_wrapper">
+        <div class="form_container">
+          <div class="title_container">
+            <h2>Registration</h2>
+          </div>
+          <div class="row clearfix">
+            <div class="">
+              <form>
+                <div class="row clearfix">
+                  <div class="col_half">
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                      <input type="text" name="name" placeholder="Name" />
+                    </div>
+                  </div>
+                  <div class="col_half">
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                      <input type="number" name="CNIC" placeholder="Enter CNIC" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="password" placeholder="Password" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="password" name="cpassword" placeholder="Re-type Password" required />
+                </div>
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                  <input type="text" name="address" placeholder="Enter address" required />
+                </div>
+                      <div id="imagepart">
+                          Upload Image: <input type="file" name="photo">
+                      </div>
+                    <br>
+          
+                          <div>
+                              Select role: <select name="role">
+                                  <option value="1">Voter</option>
+                                  <option value="2">Group</option>
+                              </select>
+                          </div>
+                      <br>
+                      <button 
+                          style="padding: 10px;
+                                  border-radius: 5px;
+                                  background-color: rgb(0, 157, 255);
+                                  color: white;">
+                      REGISTER</button><br><br>
+                      If already user. <br></user><a href="../index.html">LOG IN HERE</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
